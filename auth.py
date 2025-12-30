@@ -3,8 +3,8 @@ import hashlib
 
 # usuários (exemplo)
 USERS = {
-    "max": hashlib.sha256("1234".encode()).hexdigest(),
-    "admin": hashlib.sha256("admin123".encode()).hexdigest(),
+    "max": hashlib.sha256("x0104628".encode()).hexdigest(),
+    "JTalent": hashlib.sha256("Yeshua1010@".encode()).hexdigest(),
 }
 
 def hash_password(password: str) -> str:
