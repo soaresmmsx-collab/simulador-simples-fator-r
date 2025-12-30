@@ -1,8 +1,16 @@
+from auth import login, logout
 import streamlit as st
 import pandas as pd
 from calculos import *
 
 st.set_page_config(page_title="Simulador Simples Nacional", layout="wide")
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+
+if not st.session_state.logged_in:
+    login()
+    st.stop()
+
 st.title("📊 Simulador Simples Nacional – Fator R")
 
 if "historico" not in st.session_state:
