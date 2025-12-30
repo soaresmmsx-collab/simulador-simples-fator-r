@@ -57,3 +57,4 @@ if st.session_state.historico:
         "Fator R (%)": "{:.2f}%",
         "Alíquota Efetiva (%)": "{:.2f}%"
     }))
+logout()
